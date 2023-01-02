@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Junqi - LHL - Bar Chart Project</title>
+  <link rel="stylesheet" href="styles/myStyle.css">
+  <script src="scripts/jquery-3.6.3.min"></script>
+  <script src="scripts/main.js"></script>
+</head>
+
+<body>
+  <h1>Junqi LHL Bar Chart Project</h1>
+  <div id="barChart">
+    <div id="barChartTitle">
+      <h3 id="barLabel">This is a titel of bar chart</h3>
+    </div>
+    <div id="barChartX"></div>
+    <div id="bars"></div>
+    <div id="barChartY"></div>
+  </div>
+  <div>
+    <div id="changeBarColor">
+      <label for="cars">Change the bar color of bar</label>
+      <select id="barsSelect" name="barsSelect" onchange="changeBarColorFun(value)">
+        <option value="green">Green</option>
+        <option value="red">Red</option>
+      </select>
+    </div>
+    <div id="changeLabelColor">
+      <label for="cars">Change the label color of bar</label>
+      <select id="barsLabelSelect" name="barsLabelSelect" onchange="changeLabelColorFun(value)">
+        <option value="yellow">Yellow</option>
+        <option value="red">Red</option>
+      </select>
+    </div>
+    <div id="changeBarGap">
+      <label for="cars">Change the gap of bar</label>
+      <input type="text" id="barGap" name="barGap">
+      <button onclick="changeBarGapFun()">Submit</button>
+    </div>
+  </div>
+</body>
+
+</html>
